@@ -1,7 +1,9 @@
 package com.github.monkeywie.proxyee;
 
-import com.github.monkeywie.proxyee.server.HttpProxyServer;
-import com.github.monkeywie.proxyee.server.HttpProxyServerConfig;
+//import com.github.monkeywie.proxyee.server.HttpProxyServer;
+import com.pan.myproxy.server.HttpProxyServer;
+//import com.github.monkeywie.proxyee.server.HttpProxyServerConfig;
+import com.pan.myproxy.server.HttpProxyServerConfig;
 
 public class NormalHttpProxyServer {
 
@@ -14,6 +16,6 @@ public class NormalHttpProxyServer {
     config.setProxyGroupThreads(1);
     new HttpProxyServer()
         .serverConfig(config)
-        .start(9999);
+        .start(8888);
   }
 }
